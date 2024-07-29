@@ -20,6 +20,30 @@ namespace Demo
                 Console.WriteLine();
             }
         }
+        public static void PrintStack(Stack<int> stack)
+        {
+            if (stack != null)
+            {
+                Console.Write("Stack Elements: ");
+                foreach (var item in stack)
+                {
+                    Console.Write($"{item} ");
+                }
+                Console.WriteLine();
+            }
+        }
+        public static void PrintQueue(Queue<int> queue)
+        {
+            if (queue != null)
+            {
+                Console.Write("Queue Elements: ");
+                foreach (var item in queue)
+                {
+                    Console.Write($"{item} ");
+                }
+                Console.WriteLine();
+            }
+        }
         public static void PrintValue(List<int> arr)
         {
             Console.Write("Values: ");
@@ -182,7 +206,62 @@ namespace Demo
             //        --> Dynamic length 
             //            --> Add  -->Linked List 
             //            --> Retrieve --> List
-            #endregion 
+            #endregion
+
+            #region Stack [FILO || LIFO]
+            //Stack<int> stack = new Stack<int>();
+            //// 01 Push()
+            //stack.Push(1);
+            //stack.Push(5);
+            //stack.Push(8);
+            //stack.Push(7);
+            //PrintStack(stack);
+            //// 02 Peek() 
+            ////Console.WriteLine(stack.Peek());// --> return last elemnt pushed on array without removing
+            //// 03 Pop()
+            //Console.WriteLine(stack.Pop());// --> return last elemnt pushed on array and remove it
+            //// not when we need to use Pop() in empity array program get exciption
+            //// 04 tryPop()
+            //stack.TryPop(out int lastnumbre);
+
+            //PrintStack(stack);
+            //Console.WriteLine(stack.TryPeek(out int last));
+
+            #endregion
+
+            #region Queue [FIFO || LILO]
+            //Queue<int> queue = new Queue<int>();
+            //// 01 Enqueue()
+            //queue.Enqueue(1); 
+            //queue.Enqueue(2); 
+            //PrintQueue(queue);  
+            //// 02 Dequeue()
+            //queue.Dequeue();
+            //PrintQueue(queue);
+            //// 03 Clear()
+            ////queue.Clear();// Remoce all Item from array
+            #endregion
+
+            #region HashTable[Dictionary]
+            ////Dictionary --> New version of hashtable (non genaric based on object)
+            //Hashtable PhoneBook = new Hashtable();
+            //PhoneBook.Add("Ahmed", 123);    //
+            //                                // two values have same hashcode 
+            //// PhoneBook.Add("Ahmed", 456); //
+            ////key is unique
+            ////O(1)
+
+            //int x=10;
+            //int y=10;
+            //Console.WriteLine(x.GetHashCode());
+            //Console.WriteLine(y.GetHashCode());
+            //Console.WriteLine(x.Equals(y));
+            #endregion
+
+            #region MyRegion
+
+            #endregion
+
             #endregion
         }
     }

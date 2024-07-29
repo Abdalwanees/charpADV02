@@ -1,4 +1,6 @@
-﻿using System;
+﻿using C42_G01_ADV02.Q03;
+using C42_G01_ADV02.Q04;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -92,6 +94,25 @@ namespace C42_G01_ADV02
             //   Structure   --> 
             LinkedList<string> linkedList = new LinkedList<string>(); // --> Generates a linked list of type string
 
+            // 04 -> Stack<T> (Generic collection)
+            //               --> Exists in the namespace: 'System.Collections.Generic'
+            //               --> Is a collection that follows the Last-In-First-Out (LIFO) principle
+            //   performance --> Efficient for push and pop operations, as these operations can be done in constant time.
+            //               --> Access time is linear (O(n)) for searching elements.
+            //   Safety      --> Provides compile-time type checking, reducing the risk of runtime errors due to type mismatches.
+            //   Structure   --> 
+            Stack<int> stack = new Stack<int>(); // --> Generates a stack of type int
+
+
+            // 05 -> Queue<T> (Generic collection)
+            //               --> Exists in the namespace: 'System.Collections.Generic'
+            //               --> Is a collection that follows the First-In-First-Out (FIFO) principle
+            //   performance --> Efficient for enqueue and dequeue operations, as these operations can be done in constant time.
+            //               --> Access time is linear (O(n)) for searching elements.
+            //   Safety      --> Provides compile-time type checking, reducing the risk of runtime errors due to type mismatches.
+            //   Structure   --> 
+            Queue<int> queue = new Queue<int>(); // --> Generates a queue of type int
+
             #endregion
 
             #region Part02
@@ -124,6 +145,31 @@ namespace C42_G01_ADV02
             //PrintList(numbersList);
             #endregion
 
+            #region Q03
+            //var fixedlist = new FixedSizeList<int>(3);
+
+            //fixedlist.Add(1);
+            //fixedlist.Add(2);
+            //fixedlist.Add(3);
+
+            //fixedlist.Add(4); 
+
+            //Console.WriteLine(fixedlist.Get(1)); 
+            //Console.WriteLine(fixedlist.Get(3));
+            #endregion
+
+            #region Q04
+            string input = "SASS";
+            int index = FirstNonRepeatedCharacter.GetFirstNonRepeatedCharacterIndex(input);
+            if (index != -1)
+            {
+                Console.WriteLine($"The first non-repeated character is at index {index}.");
+            }
+            else
+            {
+                Console.WriteLine("No non-repeated character found.");
+            }
+            #endregion
             #endregion
         }
     }

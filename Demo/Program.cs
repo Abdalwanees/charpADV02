@@ -77,6 +77,56 @@ namespace Demo
 
             #endregion
 
+            #region Methods Used In List
+            //List<int> Numbers = new List<int>() /*{ 1,2,3,4,5,6,7,8,9,10 }*/;
+            //Numbers = Enumerable.Range(1, 10).ToList(); // Add numbers to the list from 1 to 10
+
+            //// Object member methods
+            //// 01 --> Add()
+            //Numbers.Add(1); // Add an element to the list
+
+            //// 02 --> Insert()
+            //Numbers.Insert(0, 5); // Insert number '5' at index '0', shifting all numbers one position
+            //PrintValue(Numbers);
+
+            //// 03 --> BinarySearch()
+            ////    01
+            //// Console.WriteLine(Numbers.BinarySearch(30)); 
+            //// Return the index of the element if it exists.
+            //// If not, returns a negative number indicating the bitwise complement of the index of the next element
+            //// that is larger or, if there is no larger element, the bitwise complement of Count.
+
+            //// List<string> Names = new List<string>() { "Ahmed", "Mona", "Aya", "Mostafa", "Wanees" };
+            //// Names.Sort(); // Sort the list
+            //// Console.WriteLine(Names.BinarySearch("aya")); // -2 indicates that the element does not exist.
+            ////    02
+            //Console.WriteLine(Numbers.BinarySearch(0, 5, 10, null));
+            //// Binary search in the first 5 elements of the list for the value 10
+
+            //// 04 --> Clear()
+            //// Numbers.Clear(); // Remove all elements from the list
+            //// PrintValue(Numbers);
+
+            //// 05 --> Remove()
+            //// Numbers.Remove(1); // Remove the first occurrence of value 1
+            //// PrintValue(Numbers);
+
+            //// 06 --> CopyTo()
+            ////int[] arr = new int[15]; // Ensure the array is large enough
+            ////                         // Numbers.CopyTo(arr);
+            ////Numbers.CopyTo(arr, 3); // Copy the list elements to the array starting at index 3
+            ////foreach (var item in arr)
+            ////{
+            ////    Console.WriteLine(item);
+            ////}
+
+            //// 07 --> EnsureCapacity()
+            ////Numbers.EnsureCapacity(22); // Ensure the list has at least the specified capacity
+            ////PrintValue(Numbers);
+
+            //// 08 --> Indexof()
+            ////Console.WriteLine(Numbers.IndexOf(15));
+            #endregion
 
             #endregion
         }

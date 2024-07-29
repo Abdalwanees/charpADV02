@@ -8,6 +8,18 @@ namespace Demo
 {
     internal class Program
     {
+        public static void PrintLinkedList(LinkedList<int> linkedList)
+        {
+            if (linkedList != null)
+            {
+                Console.Write("LinkedList Elements: ");
+                foreach (var item in linkedList)
+                {
+                    Console.Write($"{item} ");
+                }
+                Console.WriteLine();
+            }
+        }
         public static void PrintValue(List<int> arr)
         {
             Console.Write("Values: ");
@@ -128,6 +140,49 @@ namespace Demo
             ////Console.WriteLine(Numbers.IndexOf(15));
             #endregion
 
+            #region linkedList
+            ////LinkedList --> List of node consist of two node (Data & Link) or( head & tail)
+
+            //LinkedList<int> Linkedlist = new LinkedList<int>();
+            ////linkedlist Methods
+            //// 01 --> Count()
+            //Console.WriteLine($"Count : {Linkedlist.Count}");
+            //PrintLinkedList(Linkedlist);
+            ////linkedList not have capacity
+            //// 02 --> AddFrist()
+            //Linkedlist.AddFirst(1);
+            //Console.WriteLine($"Count : {Linkedlist.Count}");
+            //PrintLinkedList(Linkedlist);
+            //Linkedlist.AddFirst(2);
+            //PrintLinkedList(Linkedlist);
+            //// 03 --> AddLast()
+            //Linkedlist.AddLast(3);
+            //PrintLinkedList(Linkedlist);
+            //// 04 --> AddAfter()
+            //// 05 --> AddBefore()
+            //// 06 --> Find()
+            //Linkedlist.AddAfter(Linkedlist.Find(2), 5);
+            //Linkedlist.AddBefore(Linkedlist.Find(2), 7);
+            //PrintLinkedList(Linkedlist);
+            //// 07 --> Frist()
+            //// 08 --> Last()
+
+            //Console.WriteLine(Linkedlist.First());
+            //Console.WriteLine(Linkedlist.Last());
+
+            #endregion
+
+            #region Array Vs List Vs Linkedlist Vs Arraylist
+            //Data 
+            //    --> Heterogeneous --> different Datatype
+            //        Arraylist
+            //    --> Homogeneous   --> Same Datatype
+            //        --> Fixed length -->Array
+
+            //        --> Dynamic length 
+            //            --> Add  -->Linked List 
+            //            --> Retrieve --> List
+            #endregion 
             #endregion
         }
     }
